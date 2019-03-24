@@ -1,0 +1,23 @@
+version: "3"
+services:
+  web:
+    build: .
+    command: npm run start:dev
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    restart: unless-stopped
+    ports:
+      - "3000:3000" 
+    networks:
+      - nginx-proxy
+    environment:
+      - "VIRTUAL_HOST=shootup.tk"  #ngninx-proxy
+      - "VIRTUAL_PORT=3000" #ngninx-proxy
+      - "LETSENCRYPT_HOST=shootup.tk" #ngninx-proxy
+      - "LETSENCRYPT_EMAIL=username@ucode.com" #ngninx-proxy
+
+networks:
+  nginx-proxy:
+    external:
+      name: nginx-proxy
