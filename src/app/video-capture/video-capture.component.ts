@@ -91,8 +91,8 @@ export class VideoCaptureComponent implements AfterViewInit {
         height: mobile ? undefined : this.videoHeight
       }
     });
-    video.srcObject = this.stream;
-    // video.src = "assets/videos/vid1-00-04.mp4";
+    // video.srcObject = this.stream;
+    video.src = "assets/videos/vid1-00-04.mp4";
 
     const options = { mimeType: "video/webm" };
     const recordedChunks = [];
