@@ -13,6 +13,7 @@ import { AttributesComponent } from "./attributes/attributes.component";
 import { CameraComponent } from "./camera/camera.component";
 import { HomeComponent } from "./home/home.component";
 import { PoseComponent } from "./pose/pose.component";
+import { ReplayComponent } from './replay/replay.component';
 import { ResultComponent } from "./result/result.component";
 import { ScannerComponent } from "./scanner/scanner.component";
 import { SpinnerComponent } from "./spinner/spinner.component";
@@ -30,7 +31,8 @@ import { VideoCaptureComponent } from "./video-capture/video-capture.component";
     PoseComponent,
     VideoCaptureComponent,
     SpinnerComponent,
-    ResultComponent
+    ResultComponent,
+    ReplayComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +47,7 @@ import { VideoCaptureComponent } from "./video-capture/video-capture.component";
         { path: "spinner", component: SpinnerComponent },
         { path: "result", component: ResultComponent },
         { path: "camera", component: CameraComponent },
+        { path: "replay", component: ReplayComponent },
         { path: "**", redirectTo: "home", pathMatch: "full" }
       ],
       { onSameUrlNavigation: "reload" }

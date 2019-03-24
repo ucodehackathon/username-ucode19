@@ -1,0 +1,25 @@
+<div class="c-video-capture">
+  <div class="c-video-capture__container">
+    <div class="c-video-capture__container__header">
+      <mat-toolbar color="primary" class="c-video-capture__container__header__logo">
+        <img src="https://www.adidas.es/glass/assets/img/icon-adidas-logo-white.svg" height="100%">
+      </mat-toolbar>
+    </div>
+
+    <div class="c-video-capture__container__body">
+      <div id='main' class="c-app__container__video">
+        <video id="video" playsinline style=" -moz-transform: scaleX(-1);
+                  -o-transform: scaleX(-1);
+                  -webkit-transform: scaleX(-1);
+                  transform: scaleX(-1);
+                  display: none;" controls="controls" *ngIf="!screenshot">
+        </video>
+
+        <canvas id="output" *ngIf="!screenshot"></canvas>
+
+        <img [src]="screenshot" *ngIf="screenshot" [width]="videoWidth" [height]="videoHeight" id='image'
+          style="position: relative;">
+      </div>
+    </div>
+  </div>
+</div>

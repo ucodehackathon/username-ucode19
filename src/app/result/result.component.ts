@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-result",
@@ -6,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./result.component.scss"]
 })
 export class ResultComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 
@@ -16,7 +17,18 @@ export class ResultComponent implements OnInit {
       "_blank"
     );
   }
-  showAlert(msg) {
-    alert(msg);
+
+  retry() {
+    this.router.navigateByUrl("pose");
+  }
+
+  replay() {
+    this.router.navigateByUrl("replay");
+  }
+
+  showAlert() {
+    alert(
+      "Gracias a las redes neuronales adversarias (GAN), establecemos un sistema en que varias redes compiten entre sí: una para generar una cara “aleatoria” y la otra para decidir si se ajusta al jugador al que más se parezca su tiro, consiguiendo al final una cara del usuario mezclada con la del jugador"
+    );
   }
 }

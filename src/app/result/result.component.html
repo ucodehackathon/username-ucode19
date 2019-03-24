@@ -61,12 +61,12 @@
           </mat-grid-list>
           <mat-grid-list rowHeight="60px" cols="3">
             <mat-grid-tile [colspan]="1" [rowspan]="1">
-              <button mat-button class="u-btn" (click)="showAlert('retry')">
+              <button mat-button class="u-btn" (click)="retry()">
                 RETRY
               </button>
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
-              <button mat-button class="u-btn" (click)="showAlert('replay')">
+              <button mat-button class="u-btn" (click)="replay()">
                 REPLAY
               </button>
             </mat-grid-tile>
@@ -136,7 +136,7 @@
         </mat-card-actions>
 
         <div>
-          <p>Other products</p>
+          <p>Personalized products</p>
           <div>
             <img class="c-result__container__body__card__other__image" src="/assets/images/other.png" alt="others">
           </div>
