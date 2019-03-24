@@ -13,13 +13,8 @@
           <mat-card-title>You have the talent of (85%):</mat-card-title>
           <mat-card-subtitle>Lionel Messi (F.C. Barcelona)</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image
-          src="https://ep01.epimg.net/deportes/imagenes/2019/03/18/actualidad/1552934333_659147_1552934622_noticia_normal.jpg"
-          alt="Photo of a Shiba Inu">
         <mat-card-content>
-          <p>
-
-          </p>
+          <img src="/assets/images/messi.jpg" class="c-result__container__body__card__image-player">
         </mat-card-content>
         <mat-card-actions>
           <mat-grid-list rowHeight="30px" cols="2">
@@ -64,28 +59,45 @@
               </button>
             </mat-grid-tile>
           </mat-grid-list>
+          <mat-grid-list rowHeight="60px" cols="3">
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button class="u-btn" (click)="showAlert('retry')">
+                RETRY
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button class="u-btn" (click)="showAlert('replay')">
+                REPLAY
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button class="u-btn" (click)="showAlert()">
+                BE LIKE HIM
+              </button>
+            </mat-grid-tile>
+          </mat-grid-list>
         </mat-card-actions>
       </mat-card>
 
-      <mat-card class="example-card footer-card">
+      <mat-card class="example-card">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>You shoot like (78%):</mat-card-title>
-          <mat-card-subtitle>Cristiano Ronaldo (Juventus)</mat-card-subtitle>
+          <mat-card-title>Predator</mat-card-title>
+          <mat-card-subtitle>19+</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image
-          src="http://as01.epimg.net/futbol/imagenes/2018/03/12/primera/1520817598_788631_1520817917_noticia_normal.jpg"
-          alt="Photo of a Shiba Inu">
         <mat-card-content>
+          <div class="c-result__container__body__card__image"></div>
           <p>
-
+            Designed for players that have control over the match and overcome the adversary's strategy. This soccer
+            sneaker has a top part that shapes around your foot and guarantees a perfect adjustment and an unmatchable
+            control. It also has an additional textured layer that helps you keep possession over the ball.
           </p>
         </mat-card-content>
         <mat-card-actions>
           <mat-grid-list rowHeight="30px" cols="2">
             <mat-grid-tile [colspan]="1" [rowspan]="1">
               <button mat-button>
-                POWER
+                WEIGHT
               </button>
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
@@ -95,7 +107,7 @@
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
               <button mat-button>
-                PRECISSION
+                QUALITY
               </button>
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
@@ -105,93 +117,30 @@
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
               <button mat-button>
-                QUALITY
+                CONTROL
               </button>
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1" [rowspan]="1">
               <button mat-button>
-                <star-rating [starType]="'svg'" [rating]="4"></star-rating>
+                <star-rating [starType]="'svg'" [rating]="3.5"></star-rating>
               </button>
             </mat-grid-tile>
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              <button mat-button>
-                BARCELONISMO
-              </button>
-            </mat-grid-tile>
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              <button mat-button>
-                <star-rating [starType]="'svg'" [rating]="0"></star-rating>
+          </mat-grid-list>
+          <mat-grid-list rowHeight="60px" cols="2">
+            <mat-grid-tile [colspan]="2" [rowspan]="1">
+              <button mat-button class="u-btn" (click)="goToPredator()">
+                I WANT IT
               </button>
             </mat-grid-tile>
           </mat-grid-list>
         </mat-card-actions>
-      </mat-card>
 
-      <mat-card class="example-card footer-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>You have the speed of (65%):</mat-card-title>
-          <mat-card-subtitle>Gareth Bale (Real Madrid (For now))</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://www.diariogol.com/uploads/s1/61/78/52/3/gareth-bale-champions_15_970x597.jpeg"
-          alt="Photo of a Shiba Inu">
-        <mat-card-content>
-          <p>
-
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <mat-grid-list rowHeight="30px" cols="2">
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              <button mat-button>
-                POWER
-              </button>
-            </mat-grid-tile>
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              <button mat-button>
-                <star-rating [starType]="'svg'" [rating]="5"></star-rating>
-              </button>
-            </mat-grid-tile>
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              <button mat-button>
-                PRECISSION
-              </button>
-            </mat-grid-tile>
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              <button mat-button>
-                <star-rating [starType]="'svg'" [rating]="3.8"></star-rating>
-              </button>
-            </mat-grid-tile>
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              <button mat-button>
-                QUALITY
-              </button>
-            </mat-grid-tile>
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              <button mat-button>
-                <star-rating [starType]="'svg'" [rating]="3"></star-rating>
-              </button>
-            </mat-grid-tile>
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              <button mat-button>
-                BARCELONISMO
-              </button>
-            </mat-grid-tile>
-            <mat-grid-tile [colspan]="1" [rowspan]="1">
-              <button mat-button>
-                <star-rating [starType]="'svg'" [rating]="1"></star-rating>
-              </button>
-            </mat-grid-tile>
-          </mat-grid-list>
-        </mat-card-actions>
-      </mat-card>
-
-      <mat-card class="example-card footer-card">
-        <mat-card-actions>
-          <button mat-button (click)="goToPredator()" class="c-result__container__body__card__footer__button">
-            BUY
-          </button>
-        </mat-card-actions>
+        <div>
+          <p>Other products</p>
+          <div>
+            <img class="c-result__container__body__card__other__image" src="/assets/images/other.png" alt="others">
+          </div>
+        </div>
       </mat-card>
 
     </div>

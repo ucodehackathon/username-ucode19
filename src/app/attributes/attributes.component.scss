@@ -13,8 +13,15 @@
 
     &__body {
       &__card {
-        &__footer {
-          &__button {
+        &__image {
+          width: 100%;
+          height: 200px;
+          background-image: url('https://assets.adidas.com/images/w_840,h_840,f_auto,q_auto:sensitive,fl_lossy/12044ac7f60846f7ba0ca9b601067211_9366/Bota_de_futbol_Predator_19__cesped_natural_seco_Negro_BC0549_01_standard.jpg');
+          background-position: center;
+          background-size: cover;
+        }
+        &__other {
+          &__image {
             width: 100%;
           }
         }
