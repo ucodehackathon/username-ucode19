@@ -16,4 +16,7 @@ export class ResultComponent implements OnInit {
       "_blank"
     );
   }
+  showAlert(msg) {
+    alert(msg);
+  }
 }

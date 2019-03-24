@@ -13,6 +13,11 @@
 
     &__body {
       &__card {
+        &__image {
+          width: 60%;
+          margin: 0 auto;
+          display: block;
+        }
         &__footer {
           &__button {
             width: 100%;

@@ -18,11 +18,11 @@
           <canvas id="canvas" style="position: absolute; left: 0;"></canvas>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-button class="c-scanner__container__body__card__footer__button" *ngIf="!imageTaken"
+          <button mat-button class="u-btn" *ngIf="!imageTaken"
             (click)="takeImage()">
             CAPTURE
           </button>
-          <button mat-button class="c-scanner__container__body__card__footer__button" *ngIf="imageTaken"
+          <button mat-button class="u-btn" *ngIf="imageTaken"
             (click)="goToAttributes()">
             ACCEPT
           </button>
