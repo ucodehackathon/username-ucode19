@@ -1,8 +1,6 @@
 import { AfterViewInit, Component } from "@angular/core";
 import { Router } from "@angular/router";
 import * as posenet from "@tensorflow-models/posenet";
-import * as tf from "@tensorflow/tfjs";
-import { loadLayersModel } from "@tensorflow/tfjs";
 import dat from "dat.gui";
 import * as html2canvas from "html2canvas";
 import Stats from "stats.js";
@@ -119,32 +117,32 @@ export class VideoCaptureComponent implements AfterViewInit {
 
       console.log("FINNNNNN", new Blob(recordedChunks));
 
-      const blob = new Blob(recordedChunks);
-      // do something with this blob
-      const vidURL = URL.createObjectURL(blob);
-      const vid = document.createElement("video");
-      vid.src = vidURL;
-      vid.height = 1920;
-      vid.width = 1080;
+      // const blob = new Blob(recordedChunks);
+      // // do something with this blob
+      // const vidURL = URL.createObjectURL(blob);
+      // const vid = document.createElement("video");
+      // vid.src = vidURL;
+      // vid.height = 1920;
+      // vid.width = 1080;
 
-      console.log("recordedChunks: ", recordedChunks);
+      // console.log("recordedChunks: ", recordedChunks);
 
-      const MODEL_URL = "assets/model/model.json";
+      // const MODEL_URL = "assets/model/model.json";
 
-      const model = await loadLayersModel(MODEL_URL);
+      // const model = await loadLayersModel(MODEL_URL);
 
-      const tensorArray = tf.tensor(recordedChunks);
+      // const tensorArray = tf.tensor(recordedChunks);
 
-      const tfFromPixels = tf.browser.fromPixels(vid);
-      tfFromPixels.shape.splice(0,3);
-      tfFromPixels.shape.push(null);
-      tfFromPixels.shape.push(240);
-      tfFromPixels.shape.push(240);
-      tfFromPixels.shape.push(23);
-      console.log('tfFromPixels: ', tfFromPixels);
+      // const tfFromPixels = tf.browser.fromPixels(vid);
+      // tfFromPixels.shape.splice(0,3);
+      // tfFromPixels.shape.push(null);
+      // tfFromPixels.shape.push(240);
+      // tfFromPixels.shape.push(240);
+      // tfFromPixels.shape.push(23);
+      // console.log('tfFromPixels: ', JSON.stringify(tfFromPixels));
 
-      const asdf = model.predict(tfFromPixels, { verbose: true });
-      console.log("resultExect: ", asdf);
+      // const asdf = model.predict(tfFromPixels, { verbose: true });
+      // console.log("resultExect: ", asdf);
     });
 
     console.log("mediaRecorder: ", this.mediaRecorder);
@@ -361,7 +359,7 @@ export class VideoCaptureComponent implements AfterViewInit {
 
           this.mediaRecorder.stop();
           setTimeout(() => {
-            // this.router.navigateByUrl("spinner");
+            this.router.navigateByUrl("spinner");
           }, 1500);
         });
       }
