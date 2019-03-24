@@ -44,7 +44,8 @@ import { VideoCaptureComponent } from "./video-capture/video-capture.component";
         { path: "video-capture", component: VideoCaptureComponent },
         { path: "spinner", component: SpinnerComponent },
         { path: "result", component: ResultComponent },
-        { path: "camera", component: CameraComponent }
+        { path: "camera", component: CameraComponent },
+        { path: "**", redirectTo: "home", pathMatch: "full" }
       ],
       { onSameUrlNavigation: "reload" }
     ),
