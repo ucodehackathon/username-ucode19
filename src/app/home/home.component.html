@@ -1,0 +1,27 @@
+<div class="c-home">
+  <div class="c-home__container">
+    <div class="c-home__container__header">
+      <mat-toolbar color="primary" class="c-home__container__header__logo">
+        <img src="https://www.adidas.es/glass/assets/img/icon-adidas-logo-white.svg" height="100%">
+      </mat-toolbar>
+    </div>
+
+    <div class="c-home__container__body">
+      <mat-card class="example-card footer-card">
+        <mat-card-header>
+          <mat-card-title>Scan your sneaker</mat-card-title>
+          <mat-card-subtitle>Scan the product barcode, the QR or just take a picture!</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://i.pinimg.com/originals/2e/38/86/2e38861f5f4b6f474774fa0bf100035f.png"
+          alt="Photo of a Shiba Inu">
+        <mat-card-content>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button class="c-home__container__body__card__footer__button" (click)="goToScanner()">
+            SCAN
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
