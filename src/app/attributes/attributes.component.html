@@ -1,0 +1,74 @@
+<div class="c-attributes">
+  <div class="c-attributes__container">
+    <div class="c-attributes__container__header">
+      <mat-toolbar color="primary" class="c-attributes__container__header__logo">
+        <img src="https://www.adidas.es/glass/assets/img/icon-adidas-logo-white.svg" height="100%">
+      </mat-toolbar>
+    </div>
+
+    <div class="c-attributes__container__body">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Predator</mat-card-title>
+          <mat-card-subtitle>19+</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="c-attributes__container__body__card__image"></div>
+          <p>
+            Designed for players that have control over the match and overcome the adversary's strategy. This soccer
+            sneaker has a top part that shapes around your foot and guarantees a perfect adjustment and an unmatchable
+            control. It also has an additional textured layer that helps you keep possession over the ball.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <mat-grid-list rowHeight="30px" cols="2">
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                WEIGHT
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                <star-rating [starType]="'svg'" [rating]="4.5"></star-rating>
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                QUALITY
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                <star-rating [starType]="'svg'" [rating]="5"></star-rating>
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                CONTROL
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                <star-rating [starType]="'svg'" [rating]="3.5"></star-rating>
+              </button>
+            </mat-grid-tile>
+          </mat-grid-list>
+          <mat-grid-list rowHeight="60px" cols="2">
+            <mat-grid-tile [colspan]="2" [rowspan]="1">
+              <button mat-button class="u-btn" (click)="goToSteps()">
+                TRY IT ON
+              </button>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-card-actions>
+        <div>
+          <p>Other products</p>
+          <div>
+            <img class="c-attributes__container__body__card__other__image" src="/assets/images/other.png" alt="others">
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

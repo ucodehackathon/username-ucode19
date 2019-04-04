@@ -1,0 +1,148 @@
+<div class="c-result">
+  <div class="c-result__container">
+    <div class="c-result__container__header">
+      <mat-toolbar color="primary" class="c-result__container__header__logo">
+        <img src="https://www.adidas.es/glass/assets/img/icon-adidas-logo-white.svg" height="100%">
+      </mat-toolbar>
+    </div>
+
+    <div class="c-result__container__body">
+      <mat-card class="example-card footer-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>You have the talent of (85%):</mat-card-title>
+          <mat-card-subtitle>Lionel Messi (F.C. Barcelona)</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <img src="/assets/images/messi.jpg" class="c-result__container__body__card__image-player">
+        </mat-card-content>
+        <mat-card-actions>
+          <mat-grid-list rowHeight="30px" cols="2">
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                POWER
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                <star-rating [starType]="'svg'" [rating]="3"></star-rating>
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                PRECISSION
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                <star-rating [starType]="'svg'" [rating]="5"></star-rating>
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                QUALITY
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                <star-rating [starType]="'svg'" [rating]="5"></star-rating>
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                BARCELONISMO
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                <star-rating [starType]="'svg'" [rating]="5"></star-rating>
+              </button>
+            </mat-grid-tile>
+          </mat-grid-list>
+          <mat-grid-list rowHeight="60px" cols="3">
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button class="u-btn" (click)="retry()">
+                RETRY
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button class="u-btn" (click)="replay()">
+                REPLAY
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button class="u-btn" (click)="showAlert()">
+                BE LIKE HIM
+              </button>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Predator</mat-card-title>
+          <mat-card-subtitle>19+</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="c-result__container__body__card__image"></div>
+          <p>
+            Designed for players that have control over the match and overcome the adversary's strategy. This soccer
+            sneaker has a top part that shapes around your foot and guarantees a perfect adjustment and an unmatchable
+            control. It also has an additional textured layer that helps you keep possession over the ball.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <mat-grid-list rowHeight="30px" cols="2">
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                WEIGHT
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                <star-rating [starType]="'svg'" [rating]="4.5"></star-rating>
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                QUALITY
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                <star-rating [starType]="'svg'" [rating]="5"></star-rating>
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                CONTROL
+              </button>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+              <button mat-button>
+                <star-rating [starType]="'svg'" [rating]="3.5"></star-rating>
+              </button>
+            </mat-grid-tile>
+          </mat-grid-list>
+          <mat-grid-list rowHeight="60px" cols="2">
+            <mat-grid-tile [colspan]="2" [rowspan]="1">
+              <button mat-button class="u-btn" (click)="goToPredator()">
+                I WANT IT
+              </button>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-card-actions>
+
+        <div>
+          <p>Personalized products</p>
+          <div>
+            <img class="c-result__container__body__card__other__image" src="/assets/images/other.png" alt="others">
+          </div>
+        </div>
+      </mat-card>
+
+    </div>
+  </div>
+</div>

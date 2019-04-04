@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~css-star-rating/scss/star-rating';
+
+.u-btn {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+    text-transform: uppercase;
+}

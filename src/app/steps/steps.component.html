@@ -1,0 +1,32 @@
+<div class="c-steps">
+  <div class="c-steps__container">
+    <div class="c-steps__container__header">
+      <mat-toolbar color="primary" class="c-steps__container__header__logo">
+        <img src="https://www.adidas.es/glass/assets/img/icon-adidas-logo-white.svg" height="100%">
+      </mat-toolbar>
+    </div>
+
+    <div class="c-steps__container__body">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Follow these steps</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image class="c-steps__container__body__card__image" src="assets/images/schema.png">
+        <mat-card-content>
+          <mat-list>
+            <mat-list-item> 1. Put on the boots </mat-list-item>
+            <mat-list-item> 2. Make sure that you are in the adidas mark </mat-list-item>
+            <mat-list-item> 3. Press button (3, 2, 1, GO!) </mat-list-item>
+            <mat-list-item> 4. Shoot the ball! </mat-list-item>
+          </mat-list>
+        </mat-card-content>
+        <mat-card-actions>
+          <button matt-button class="u-btn" (click)="goToPose()">
+            3, 2, 1, GO!
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

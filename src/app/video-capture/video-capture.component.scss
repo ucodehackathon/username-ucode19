@@ -1,0 +1,24 @@
+.c-video-capture {
+  min-height: 100vh;
+
+  &__container {
+    &__header {
+      &__logo {
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        background: black;
+      }
+    }
+
+    &__body {
+      &__card {
+        &__footer {
+          &__button {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

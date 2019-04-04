@@ -1,0 +1,46 @@
+<!-- <div class="c-app" *ngIf="countdownValue === 3 ||running">
+  <div class="c-app__container">
+    <main class="container">
+      <div class="progress"></div>
+      <div class="counter">{{countdownValue}}</div>
+      <button class="button">Toggle</button>
+    </main>
+  </div>
+</div>
+
+<div id="info" style='display:none' [hidden]="running">
+</div>
+<div id="loading" [hidden]="running">
+  Loading the model...
+</div>
+
+<div id='main' style='display:flex; align-items: center;' [hidden]="running">
+  <video id="video" playsinline style=" -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        display: none;
+        " [hidden]="running">
+  </video>
+  <canvas id="output" [hidden]="running"></canvas>
+
+  <mat-grid-list cols="4" rowHeight="100px" *ngIf="!showVideo" style="height: 100%; width: 100%">
+    <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows"
+      [style.background]="tile.color">
+      {{tile.text}}
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+<script src="camera.js"></script>
+
+ -->
+
+
+
+
+
+
+
+ 
+<router-outlet></router-outlet>
